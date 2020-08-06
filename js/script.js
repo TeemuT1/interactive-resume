@@ -1,7 +1,9 @@
 $(document).ready(function()
 {
+	applyHeader();
 	applyNavigation(); 
 	applyMailTo();
+	applyResize();
 	checkHash();
 });
 
@@ -71,4 +73,17 @@ function checkHash()
 	{
 		$('a[href='+ lstrHash +']').trigger('click');
 	}
+}
+
+function applyHeader()
+{
+	$('.jumbotron').css({ height: ($(window).height() - 1) +'px' });	
+}	
+
+function applyResize()
+{
+	$(window).on('resize', function() 
+	{  
+		applyHeader();
+	}); 
 }

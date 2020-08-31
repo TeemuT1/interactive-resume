@@ -67,9 +67,10 @@ ul.no-bullets {
 
 }
 .jumbotron .overlay { 
-    background-color: #22A39F; 
-    position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0.0; 
-    filter:alpha(opacity=0); z-index: 2; }
+    background-color: #276bff; 
+    position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0.2;
+    filter:alpha(opacity=20); z-index: 2; 
+}
 
 .jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
 .jumbotron .container > * { text-align: center; color: #FFFFFF; }
@@ -358,7 +359,7 @@ figure.effect:hover p {
 
 @keyframes shine {
 
-    40% {
+    20% {
         color: #276bff;
     }
 
@@ -366,7 +367,7 @@ figure.effect:hover p {
         color: gold
 
     }
-    60% {
+    80% {
         color: #276bff;
     }
 }
